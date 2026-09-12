@@ -103,7 +103,7 @@ export default function Login() {
                   <div className="relative">
                     <User className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-accent-foreground" />
                     <Input
-                      className="w-full pl-10 pr-4 py-3 border-2 border-border rounded-lg  font-manrope "
+                      className="w-full pl-10 pr-4 h-13 py-3 border-2 border-border rounded-lg text-lg font-manrope "
                       id="email"
                       type="email"
                       autoComplete="email"
@@ -123,9 +123,9 @@ export default function Login() {
                     Password
                   </Label>
                   <div className="relative">
-                    <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-wedding-soft" />
+                    <Lock className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5" />
                     <Input
-                      className="w-full pl-10 pr-4 py-3 border-2 border-border rounded-lg  font-manrope "
+                      className="w-full h-13 pl-10 pr-4  py-3 border-2 border-border rounded-lg text-lg  text-accent-foreground "
                       id="password"
                       type="password"
                       autoComplete="current-password"
@@ -137,7 +137,7 @@ export default function Login() {
                     />
                   </div>
                 </div>
-                <Button type="submit" className="w-full mb-2">
+                <Button type="submit" className="w-full mb-2 h-12">
                   {isPending ? (
                     <>
                       <Loader2 className="w-5 h-5 animate-spin" />

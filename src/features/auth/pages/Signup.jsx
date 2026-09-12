@@ -98,6 +98,7 @@ export default function Signup() {
                     First name
                   </FieldLabel>
                   <Input
+                    className="w-full h-12"
                     id="firstName"
                     type="text"
                     autoComplete="given-name"
@@ -116,6 +117,7 @@ export default function Signup() {
                     Last name
                   </FieldLabel>
                   <Input
+                    className="w-full h-12"
                     id="lastName"
                     type="text"
                     autoComplete="family-name"
@@ -134,6 +136,7 @@ export default function Signup() {
                     Email
                   </FieldLabel>
                   <Input
+                    className="w-full h-12"
                     id="email"
                     type="text"
                     autoComplete="email"
@@ -160,6 +163,7 @@ export default function Signup() {
                     and !@#$%.
                   </FieldDescription>
                   <Input
+                    className="w-full h-12"
                     id="password"
                     type="password"
                     autoComplete="Password"
@@ -172,7 +176,7 @@ export default function Signup() {
                   />
                 </Field>
 
-                <Button type="submit" className="w-full">
+                <Button type="submit" className="w-full h-12">
                   {isLoading ? (
                     <>
                       <Loader2 className="w-5 h-5 animate-spin" />
@@ -185,7 +189,7 @@ export default function Signup() {
               </FieldGroup>
             </form>
             <CardFooter className="flex justify-center mt-6 pt-6 border-t border-border ">
-              <Link to="/login">
+              <Link to="/">
                 <Button
                   variant="ghots"
                   className="w-full font-manrope text-sm text-accent-foreground cursor-pointer hover:text-wedding-primary transition-colors ">

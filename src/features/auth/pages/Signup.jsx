@@ -27,7 +27,7 @@ import { SignupSchema } from "@/schema/signup.schema.js";
 import { toast } from "@/components/ui/toast";
 
 export default function Signup() {
-  const { mutate: createUser, isLoading } = useSignup();
+  const { mutate: createUser, isPending } = useSignup();
   const navigate = useNavigate();
 
   //Define form
@@ -177,7 +177,7 @@ export default function Signup() {
                 </Field>
 
                 <Button type="submit" className="w-full h-12">
-                  {isLoading ? (
+                  {isPending ? (
                     <>
                       <Loader2 className="w-5 h-5 animate-spin" />
                       Creating...

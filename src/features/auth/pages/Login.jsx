@@ -97,7 +97,8 @@ export default function Login() {
                 <div className="grid gap-2">
                   <Label
                     htmlFor="email"
-                    className="block font-manrope text-foreground font-medium  text-lg">
+                    className="block font-manrope text-foreground font-medium  text-lg"
+                  >
                     Email
                   </Label>
                   <div className="relative">
@@ -119,7 +120,8 @@ export default function Login() {
                 <div className="grid gap-2">
                   <Label
                     htmlFor="Password"
-                    className="block font-manrope text-foreground  font-medium text-lg">
+                    className="block font-manrope text-foreground  font-medium text-lg"
+                  >
                     Password
                   </Label>
                   <div className="relative">
@@ -151,8 +153,9 @@ export default function Login() {
               <div className="mt-6 pt-6 border-t border-border text-center">
                 <Link to={paths.signup}>
                   <Button
-                    variant="ghots"
-                    className="w-full font-manrope text-sm text-accent-foreground cursor-pointer hover:text-wedding-primary transition-colors ">
+                    variant="ghost"
+                    className="w-full font-manrope text-sm text-accent-foreground cursor-pointer hover:text-wedding-primary transition-colors "
+                  >
                     ← Go to sign up
                   </Button>
                 </Link>

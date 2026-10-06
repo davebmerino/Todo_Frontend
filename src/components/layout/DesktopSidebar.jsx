@@ -14,7 +14,8 @@ function SidebarLink({ to, icon: Icon, label, end }) {
             ? "bg-primary text-text-primary"
             : "text-text-muted hover:bg-background hover:text-text-primary"
         }`
-      }>
+      }
+    >
       <Icon className="h-5 w-5" aria-hidden="true" />
       {label}
     </NavLink>

@@ -21,7 +21,7 @@ const loginUser = async (user) => {
   //Get the response as result
   const result = await response.json().catch(() => null);
 
-  //Condition is no reponse
+  //Condition is no response
   if (!response.ok) {
     const validationMessage =
       Array.isArray(result?.data) && result.data.length > 0
